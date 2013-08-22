@@ -1,5 +1,12 @@
-#  Freifunk Hamburg Router einrichten
+#  Freifunk Hamburg Router Firmware einspielen
 ### Schnell–Anleitung
+
+
+![](./img/TP_link_firmware_confirm.png "")
+![](./img/TP_link_firmware_file.png "")
+![](./img/TP_link_firmware.png "")
+![](./img/TP_link_start.png "")
+![](./img/TP_link_upgrade_progress.png "")
 
 ## Einleitung
 Das Einrichten des Routers ist ganz einfach und Du benötigst keine technischen Kenntnisse. Wenn du dieser Anleitung folgst kann eigentlich nichts schiefgehen.
@@ -10,18 +17,18 @@ hamburg.freifunk.net erreicht werden.
 Dein Router sollte das Freifunk Betriebssystem bereits installiert haben. Ob das so ist, erfährst du von dem Freifunker, von dem du das Gerät bekommen hast.
 Wenn dein Router noch nicht das Freifunk-Betriebssystem installiert hat, findest du hier die Anleitung wie du es installierst.
 
-## Router einrichten
+## Router anschließen
 ### 1. Freifunk-Router mit dem Computer verbinden
-Bitte schließe deinen Router an eine Stekcdose an - Das Kabel dazu ist dabei. Verbinde dann den Router mit dem beiliegenden grauen LAN-Kabel mit Deinem Computer. Stecke dafür das Kabel in eine der gelben Buchsen (die blaue brauchst du später).
-
-:: Bild einfügen.
+Bitte schließe deinen Router an eine Stekckdose an - Das Kabel dazu ist dabei. Verbinde dann den Router mit dem beiliegenden grauen LAN-Kabel mit Deinem Computer. Stecke dafür das Kabel in eine der gelben Buchsen (die blaue brauchst du später). Vergiss nicht den Router einzuschalten.
+TODO Bild einfügen.
 
 ### 2. Konfiguration starten
 Jetzt kannst du den Router einfach über den Browser konfigurieren. Dazu rufst du in deinen Browser folgende Adresse auf: 
-<http://192.168.1.1>
+<http://192.168.1.0>
 
-Dein Browserfenster müsste nun so aussehen:
-![Start](./start.jpg "So geht's los")
+Als erstes wirst du nach Username und Password gefragt - ab Werk ist das "admin" und "admin". 
+Nach dem Login müsste das Browserfenster nun so aussehen:
+TODO Bild einfügen
 
 Folge hier dem Link "Knoten neu einrichten". Er führt dich durch die Schritte des Einrichtungsprozesses.
 
@@ -42,7 +49,9 @@ TODO: Entscheiden ob das weg kann
 	Wichtig: Du kommst jederzeit durch Drücken der QSS-Taste wieder in meinen Configmode und kannst Einstellungen ändern.
 
 ### 5. Optionen 
-
+#### Mesh
+#### Bandbreitenbegrenzung
+Wenn du einen einen einen einigermaßen normalen Internetanschluss hast, brauchst du die Begrenzung nicht aktivieren.
 
 ### 6. Dein Schlüssel
 Nun bekommst Du einen Schlüssel:
