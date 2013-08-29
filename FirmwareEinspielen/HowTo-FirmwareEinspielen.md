@@ -1,93 +1,77 @@
 #  Freifunk Hamburg Router Firmware einspielen
-### Schnell–Anleitung
-
-
-![](./img/TP_link_firmware_confirm.png "")
-![](./img/TP_link_firmware_file.png "")
-![](./img/TP_link_firmware.png "")
-![](./img/TP_link_start.png "")
-![](./img/TP_link_upgrade_progress.png "")
-
+### Schritt für Schritt Anleitung
 ## Einleitung
-Das Einrichten des Routers ist ganz einfach und Du benötigst keine technischen Kenntnisse. Wenn du dieser Anleitung folgst kann eigentlich nichts schiefgehen.
+Um einen Router als Freifunk Router zu nutzen ist es erforderlich dort das Freifunk Betriebssystem – die Freifunk Firmware – zu installieren.
 
-Diese Anleitung erklärt Schritt für Schritt wie's geht. Wenn du fertig bist ist läuft das Freifunk WLAN und kann von Allen unter 
-hamburg.freifunk.net erreicht werden.
+Die Installation ist ganz einfach und Du benötigst keine technischen Kenntnisse. Wenn du dieser Anleitung folgst kann eigentlich nichts schiefgehen.
 
-Dein Router sollte das Freifunk Betriebssystem bereits installiert haben. Ob das so ist, erfährst du von dem Freifunker, von dem du das Gerät bekommen hast.
-Wenn dein Router noch nicht das Freifunk-Betriebssystem installiert hat, findest du hier die Anleitung wie du es installierst.
+Anmerkung: Diese Anleitung geht davon aus, dass du einen relativ neuen Router von TP-Link verwendest und noch keine Freifunk-Firmware auf deinem Router läuft. Wenn du einen anderen Router hast, oder einen älteren, oder ein Update machen willst, bitte lies die Anweisungen im (http://wiki.freifunk.net/Freifunk_Hamburg/Firmware.
+Los geht's!
 
-## Router anschließen
-### 1. Freifunk-Router mit dem Computer verbinden
-Bitte schließe deinen Router an eine Stekckdose an - Das Kabel dazu ist dabei. Verbinde dann den Router mit dem beiliegenden grauen LAN-Kabel mit Deinem Computer. Stecke dafür das Kabel in eine der gelben Buchsen (die blaue brauchst du später). Vergiss nicht den Router einzuschalten.
-TODO Bild einfügen.
+## 1. Freifunk-Router mit dem Computer verbinden
+![Dein Router](./img/dein_router.png "Das ist dein Router")
 
-### 2. Konfiguration starten
-Jetzt kannst du den Router einfach über den Browser konfigurieren. Dazu rufst du in deinen Browser folgende Adresse auf: 
-<http://192.168.1.0>
+Bitte schließe deinen Router (1) (Die Antenne (2) kannst du jetzt oder auch später aufschrauben.) an eine Steckdose an - Das Kabel dazu ist dabei (3). Verbinde dann den Router mit dem beiliegenden grauen LAN-Kabel (4) mit Deinem Computer. 
 
-Als erstes wirst du nach Username und Password gefragt - ab Werk ist das "admin" und "admin". 
-Nach dem Login müsste das Browserfenster nun so aussehen:
-TODO Bild einfügen
+Stecke dafür das Kabel in eine der gelben Buchsen (die blaue brauchst du später).
+![Gelbe Buchse](./img/gelbe_buchse.png "Steck deinen Router für die Einrichtung hier ein")
 
-Folge hier dem Link "Knoten neu einrichten". Er führt dich durch die Schritte des Einrichtungsprozesses.
+## 2. Firmware runterladen
+Derzeit gibt es die Hamburg Freifunk als fertigen Download für zwei verschiedene Router-Typen. 
 
-### 3. Passwort vergeben
-Als erstes legst du ein Passwort fest.
-TODO: Wann brauch ich das? 
+Herauszufinden welche Firmware du brauchst ist ganz einfach:
+Der Router-Typ (1) und die Hardware-Version (2) steht auf der Rückseite des Routers.
 
-![Passwort](./password.jpg "Nimm ein gutes Passwort")
+![Hardware-Version](./img/TP_link_version.png "Hardware-Version")
 
-### 4. Namen vergeben
-ALs nächstes musst du deinem Router einen Namen geben.
-TODO: Warum? Wo eird der denn benötigt?
-![Name](./name.jpg "Such dir einen Namen aus")
+### TP-Link TL-WR740N / TL-WR741ND (der Router mit nur einer Antenne):
 
-Nimm am Besten einen Namen, der …
-TODO: Empfehlungen zum Namen
-TODO: Entscheiden ob das weg kann
-	Wichtig: Du kommst jederzeit durch Drücken der QSS-Taste wieder in meinen Configmode und kannst Einstellungen ändern.
+Version __[4.x](http://freifunk-gw01.hamburg.ccc.de/ffhh/openwrt-ar71xx-generic-tl-wr741nd-v4-squashfs-factory.bin)__
 
-### 5. Optionen 
-#### Mesh
-#### Bandbreitenbegrenzung
-Wenn du einen einen einen einigermaßen normalen Internetanschluss hast, brauchst du die Begrenzung nicht aktivieren.
+### TP-Link TL-WR842ND (der Router mit zwei Antennen)
 
-### 6. Dein Schlüssel
-Nun bekommst Du einen Schlüssel:
-![Schlüssel](./schluessel.jpg)
-Diesen Schlüssel musst Du dir aufschreiben! Du kannst ihn zusätzlich in die Zwischenablage kopieren!
+Version __[1.x](http://freifunk-gw01.hamburg.ccc.de/ffhh/openwrt-ar71xx-generic-tl-wr842n-v1-squashfs-factory.bin)__ 
 
-### 7. Abschließen und Einstellungen speichern
-Noch einmal auf Weiter und auf „Jetzt Neustarten“ und ich starte neu und bin fast bereit...
+Wenn du einen anderen Router verwendest, oder wenn du eine ältere Version der genannten Router hast, kannst du im [Wiki](http://wiki.freifunk.net/Freifunk_Hamburg/Firmware#Download) die entsprechende Version der Firmware laden.
 
+## 3. Firmware einspielen
+Jetzt kannst du den Router einfach über den Browser konfigurieren. 
 
+Dazu rufst du in deinen Browser folgende Adresse auf: __<http://192.168.0.1>__
 
+Dein Browserfenster müsste nun so aussehen – Folge hier dem Link "System Tools".
 
-Wichtig: Wenn ich keine anderen Freifunk-Knoten sehe, kann ich nicht „meshen“ und das Freifunk-Netz vergrößern. Ich brauche in diesem Fall eine Internetverbindung um ein Teil des Freifunk-Netzes zu werden – Bitte schließe mich mit einem Lankabel an Deinen Heimrouter an - 
-Wichtig: benutze dafür nur meine blaue Buchse und NICHT eine meiner gelben Buchsen!
+![TP-Link Konfiguration](./img/TP_link_start.png "Geh zu System Tools")
 
-## Router im Netz registrieren
-Nun musst Du mich über dieses Formular mit dem Freifunk-Netz bekannt machen:
-<http://freifunk-gw01.hamburg.ccc.de:8080/>
-![Registrieren](./foemular.jpg)
+Als nächste wählst du aus dem Menü "Firmware Upgrade" (1). Danach kannst du die vorhin (in Schritt 2) geladene Datei zum Hochladen auswählen (2). Nach einem Klick auf "Upgrade" (3) beginnt der Prozess.
 
+![System Tools - Upgrade Formware](./img/TP_link_firmware.png "Wähle die Freifunk Firmware und spiele sie ein")
 
-Hier trägst Du nun meinen Namen, meinen Schlüssel, meine MAC-Adresse (steht unten auf meinem Gehäuse), Deinen Namen und eine E-Mail-Adresse. Außerdem kannst Du meinen Standort eintragen – so kann man mich leichter finden :-) 
+Du musst noch einmal kurz bestätigen … 
 
-Unter http://freifunk-gw01.hamburg.ccc.de/ffhhmap/geomap.html, mit der Option „Koordinaten beim nächsten Klick zeigen“ findest Du die Koordinaten meines zukünftigen Standortes.
-Dann kannst Du mich eintragen und ich werde ein Teil des Netzes – habe ein bisschen Geduld,
-es kann manchmal ein bisschen dauern.
+![confirm](./img/TP_link_firmware_file.png "Einmal Bestätigen")
 
-## Fertig!
+… und die Installation läuft.
 
-Nach wenigen Minuten sollte der Router auf der Karte an der von dir angegebenen Position zu sehen sein. Wenn ein grüner 
+![progress](./img/TP_link_upgrade_progress.png "Die Installation läuft")
 
-Solltest Du Fragen oder Probleme haben oder Einträge deines Knoten ändern wollen,
-schreibe gerne an <kontakt@hamburg.freifunk.net>!
+## 5. Abschluss 
 
-Ein wichtiger Hinweis: Als Schutz gegen die Störerhaftung wird das Freifunk-Netz in die Niederlande getunnelt. Das kann bedeuten, dass Dich Facebook, Googlemail, etc. warnen, Du seist im Ausland.
+Nachdem die Firmware fertig eingespielt ist, startet der Router neu. 
 
-Erschrick bitte nicht – in machen Warnungen ist von „Hackerangriffen“ etc. die Rede.  
+![Reboot](./img/TP_link_firmware_reboot.png "Warte bis der Router neu startet")
+
+Nach dem Neustart ist der Router nicht mehr unter der angegeben Adresse sichtbar und eine Fehlermeldung erscheint. Das ist gut so. Denn nun läuft nicht mehr die alte Firmware sondern die neue, tolle Freifunk Firmware auf deinem Router.
+
+![Keine Verbindung](./img/TP_link_firmware_finished.png "Die Fehlermeldung heißt: Alles prima!")
+
+Als nächstes musst du deinen Router noch einrichten und im Freifunk Netz anmelden. Auch das ist ganz einfach. Eine Anleitung findest du hier.
+
+![Neue IP-Adresse](./img/TP_link_firmware_reboot_finished_next.png "Gib die neue IP-Adresse ein")
+
+## Fragen?
+Solltest Du Fragen oder Probleme haben oder Einträge deines Knoten ändern wollen, schreibe gerne an 
+
+__<kontakt@hamburg.freifunk.net>__!
 
 [![Licence: Public Domain](http://creativecommons.org/images/deed/nolaw.png)](http://creativecommons.org/publicdomain/zero/1.0/)
