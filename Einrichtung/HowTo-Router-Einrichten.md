@@ -1,3 +1,5 @@
+![Freifunk.Hamburg.net](./img/Ffhh_logo-06.png)![Freifunk.Hamburg.net](./img/Schriftzug.png)
+
 # Freifunk Hamburg Router einrichten
 ### Schritt für Schritt Anleitung
 
@@ -34,20 +36,14 @@ Dein Browserfenster müsste nun so aussehen – Folge hier dem Link "Knoten neu 
 ### 3. Passwort vergeben
 Als erstes legst du ein Passwort fest.
 
-*TODO: Wann brauch ich das Password wieder? Muss das erklärt werden?*
-
 ![Passwort](./img/password.png "Nimm ein gutes Passwort")
 
-Tipp: Du kommst jederzeit durch Drücken der QSS-Taste wieder in meinen Configmode und kannst Einstellungen ändern.
-
-*TODO: Wo soll das hin? Das scheint die falsche Stelle zu sein*
+Das Passwort brauchst du, um dich später wieder an deinem Router anzumelden. Auf absehbare Zeit wird das nicht passieren. Solltest du aber irgendwann z.B. das Freifunk Betriebssystem auf dem Router (Firmware) aktualisieren wollen, musst du dich mit deinem Passwort anmelden. Schreib es dir also besser irgendwo auf.
 
 ### 4. Namen vergeben
-Als nächstes musst du deinem Router einen Namen geben. Bitte achte darauf, dass keine Leerzeichen im Namen erlaubt sind. Wenn du ein Leerzeichen brauchst, verwende einfach einen Unterstrich "_". Schreib dir den Namen am Besten auf – Du brauchst ihn später noch einmal.
+Als nächstes musst du deinem Router einen Namen geben. Nimm einfach einen, der dir gefällt und der vielleicht ein wenig über den Standort des Routers aussagt. z.B. HumanistLab_0.
 
-*TODO: Empfehlungen zum Namen. Brauchen wir überhaupt eine*
-
-*TODO: Warum? Wo wird der denn benötigt?*
+Bitte achte darauf, dass keine Leerzeichen im Namen erlaubt sind. Wenn du ein Leerzeichen brauchst, verwende einfach einen Unterstrich "_". Schreib dir den Namen am Besten auf – Du brauchst ihn später noch einmal.
 
 ![Name](./img/name_start.png "Such dir einen Namen aus")
 
@@ -68,7 +64,7 @@ Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Ban
 ### 6. Dein VPN-Schlüssel
 Klick wieder auf weiter und nun bekommst Du einen Schlüssel:
 
-__Diesen Schlüssel musst Du dir aufschreiben!__ Du kannst ihn zusätzlich in die Zwischenablage kopieren – du brauchst ihn später zur Registrierung deines Routers im Freifunk-Netz, aber dazu später mehr.
+__Diesen Schlüssel musst Du dir aufschreiben!__ Kopiere in am besten in ein Textdokument – du brauchst ihn später zur Registrierung deines Routers im Freifunk-Netz, aber dazu später mehr.
 
 ![VPN Schlüssel](./img/key.png "Der VPN Schlüssel deines Routers")
 
@@ -111,26 +107,22 @@ Als nächstes brauchst du die MAC-Adresse deines Routers. Sie steht auf der Rüc
 
 Wenn du sie in das Formular eingibst, füge bitte nach jedem zweiten Buchstaben einen Doppelpunkt hinzu. Leider schreibt der Hersteller die MAC-Adresse ohne Doppelpunkte – das ist aber nur eine kleine Schlamperei von TP-Link.
 Schreib also:
-1f:23:45:… anstatt 1f2345…
+0A:F3:45:… anstatt 0AF345…
+
 ![MAC-Adresse](./img/router_rueckseite_MAC.png "Die MAC-Adresse auf der Rückseite")
 
 ### 4. Kontakt – Nickname / Name
-klar, oder?
-
-*TODO: Wo taucht das überhaupt auf?*
-
+Unter diesem Kontakt wird dich Freifunk nur ansprechen, wenn es unbedingt sein muss, z.B. wenn ein Update des Freifunk Betriebssystems für deinen Router notwendig ist.
 
 ### 5. Kontakt – E-Mail Adresse
-…
-
-*TODO: Wo taucht das überhaupt auf? Wo wird das benutzt?*
+Wie unter 4 gesagt, wird dich Freifunk unter dieser E-Mail nicht ansprechen, es sei denn es ist absolut erforderlich. Kein Spam – versprochen.
 
 ### 6. Koordinaten des Knotens
 Wenn du den Standort deines Routers hier einträgst ist er auf der Karte der Zugangspunkte zu sehen – so können alle feststellen, wo überall Freifunk verfügbar ist. Diese Angabe ist freiwillig. Du kannst die Registrierung deines Router hier abschließen. Wir empfehlen aber sehr diese Angabe zu machen - Außerdem ist es ganz einfach die Standort zu ermitteln: 
 
 Um den Standort deines anzugeben, musst du dessen Geo-Koordinaten in das Formularfeld eintragen. Der einfachste Weg diese Koordinaten zu bestimmen ist über die Karte der Freifunk Zugangspunkte. Die findest du hier: 
 
-__http://hamburg.freifunk.net/?page_id=16__
+__http://knotenkarte.de__
 
 Dein Browserfenster sollte dann ungefähr so aussehen.
 ![Knotenkarte](./img/karte1.png "Finde deinen Standort auf der Karte")

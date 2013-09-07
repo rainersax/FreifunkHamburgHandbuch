@@ -1,11 +1,11 @@
-#  Freifunk Hamburg Router Firmware einspielen
+![Freifunk.Hamburg.net](./img/Ffhh_logo-06.png)![Freifunk.Hamburg.net](./img/Schriftzug.png)
+
+# Freifunk Hamburg Router Firmware einspielen
 ### Schritt für Schritt Anleitung
 ## Einleitung
 Um einen Router als Freifunk Router zu nutzen ist es erforderlich dort das Freifunk Betriebssystem – die Freifunk Firmware – zu installieren.
 
 Die Installation ist ganz einfach und Du benötigst keine technischen Kenntnisse. Wenn du dieser Anleitung folgst kann eigentlich nichts schiefgehen.
-
-Anmerkung: Diese Anleitung geht davon aus, dass du einen relativ neuen Router von TP-Link verwendest und noch keine Freifunk-Firmware auf deinem Router läuft. Wenn du einen anderen Router hast, oder einen älteren, oder ein Update machen willst, bitte lies die Anweisungen im (http://wiki.freifunk.net/Freifunk_Hamburg/Firmware).
 Los geht's!
 
 ## 1. Freifunk-Router mit dem Computer verbinden
@@ -24,15 +24,15 @@ Der Router-Typ (1) und die Hardware-Version (2) steht auf der Rückseite des Rou
 
 ![Hardware-Version](./img/TP_link_version.png "Hardware-Version")
 
-### TP-Link TL-WR740N / TL-WR741ND (der Router mit nur einer Antenne):
+### TP-Link TL-WR741ND (der Router mit nur einer Antenne):
 
-Version __[4.x](http://freifunk-gw01.hamburg.ccc.de/ffhh/openwrt-ar71xx-generic-tl-wr741nd-v4-squashfs-factory.bin)__
+Die Freifunk Firmware für die __[Versionen 4.x](http://freifunk-gw01.hamburg.ccc.de/ffhh/openwrt-ar71xx-generic-tl-wr741nd-v4-squashfs-factory.bin)__
 
 ### TP-Link TL-WR842ND (der Router mit zwei Antennen)
 
-Version __[1.x](http://freifunk-gw01.hamburg.ccc.de/ffhh/openwrt-ar71xx-generic-tl-wr842n-v1-squashfs-factory.bin)__ 
+Die Freifunk Firmware für die __[Versionen 1.x](http://freifunk-gw01.hamburg.ccc.de/ffhh/openwrt-ar71xx-generic-tl-wr842n-v1-squashfs-factory.bin)__ 
 
-Wenn du einen anderen Router verwendest, oder wenn du eine ältere Version der genannten Router hast, kannst du im [Wiki](http://wiki.freifunk.net/Freifunk_Hamburg/Firmware#Download) die entsprechende Version der Firmware laden.
+Wenn du einen anderen Router verwendest, oder wenn du eine ältere Version der genannten Router hast, kannst du unter [Firmware](http://hamburg.freifunk.net/?page_id=80#firmware) die entsprechende Version der Firmware laden.
 
 ## 3. Firmware einspielen
 Jetzt kannst du den Router einfach über den Browser konfigurieren. 
@@ -52,6 +52,7 @@ Du musst noch einmal kurz bestätigen …
 ![confirm](./img/TP_link_firmware_file.png "Einmal Bestätigen")
 
 … und die Installation läuft.
+Während die Installation läuft, zieh bitte auf keinen Fall den Stecker oder das Netzwerk-Kabel – denn dann ist dein Router hinüber. 
 
 ![progress](./img/TP_link_upgrade_progress.png "Die Installation läuft")
 
@@ -59,15 +60,14 @@ Du musst noch einmal kurz bestätigen …
 
 Nachdem die Firmware fertig eingespielt ist, startet der Router neu. 
 
-![Reboot](./img/TP_link_firmware_reboot.png "Warte bis der Router neu startet")
+Dass der Router neu startet merkst du auch am Blinken der Lämpchen an deinem Router. Zuerst blinken alle Lämpchen wild, dann gehen sie aus. Wenn danach das Lämpchen mit dem Zahnrad gemütlich vor sich hin blinkt, ist der Router im Config-Mode angekommen.
 
-Nach dem Neustart ist der Router nicht mehr unter der angegeben Adresse sichtbar und eine Fehlermeldung erscheint. Das ist gut so. Denn nun läuft nicht mehr die alte Firmware sondern die neue, tolle Freifunk Firmware auf deinem Router.
+Jetzt ist der Router nicht mehr unter der angegeben Adresse sichtbar und eine Fehlermeldung erscheint. 
+Das ist gut so. Denn nun läuft nicht mehr die alte Firmware sondern die neue, tolle Freifunk Firmware auf deinem Router.
 
-![Keine Verbindung](./img/TP_link_firmware_finished.png "Die Fehlermeldung heißt: Alles prima!")
+![Fehlermeldung](./img/TP_link_firmware_reboot_finished.png "Die alte Firmware ist weg - die neue läuft")
 
-Als nächstes musst du deinen Router noch einrichten und im Freifunk Netz anmelden. Auch das ist ganz einfach. Eine Anleitung findest du hier.
-
-![Neue IP-Adresse](./img/TP_link_firmware_reboot_finished_next.png "Gib die neue IP-Adresse ein")
+Als nächstes musst du deinen Router noch einrichten und im Freifunk Netz anmelden. Auch das ist ganz einfach. Eine Anleitung findest du unter [Anleitung Router einrichten](http://hamburg.freifunk.net/?page_id=80#anleitungen).
 
 ## Fragen?
 Solltest Du Fragen oder Probleme haben oder Einträge deines Knoten ändern wollen, schreibe gerne an 
