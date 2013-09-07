@@ -5,7 +5,7 @@ Um einen Router als Freifunk Router zu nutzen ist es erforderlich dort das Freif
 
 Die Installation ist ganz einfach und Du benötigst keine technischen Kenntnisse. Wenn du dieser Anleitung folgst kann eigentlich nichts schiefgehen.
 
-Anmerkung: Diese Anleitung geht davon aus, dass du einen relativ neuen Router von TP-Link verwendest und noch keine Freifunk-Firmware auf deinem Router läuft. Wenn du einen anderen Router hast, oder einen älteren, oder ein Update machen willst, bitte lies die Anweisungen im (http://wiki.freifunk.net/Freifunk_Hamburg/Firmware.
+Anmerkung: Diese Anleitung geht davon aus, dass du einen relativ neuen Router von TP-Link verwendest und noch keine Freifunk-Firmware auf deinem Router läuft. Wenn du einen anderen Router hast, oder einen älteren, oder ein Update machen willst, bitte lies die Anweisungen im (http://wiki.freifunk.net/Freifunk_Hamburg/Firmware).
 Los geht's!
 
 ## 1. Freifunk-Router mit dem Computer verbinden
