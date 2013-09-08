@@ -21,7 +21,7 @@ Bitte schließe deinen Router (1) (Die Antenne (2) kannst du jetzt oder auch sp�
 Stecke dafür das Kabel in eine der gelben Buchsen (die blaue brauchst du später).
 ![Gelbe Buchse](./img/gelbe_buchse.png "Steck deinen Router für die Einrichtung hier ein")
 
-_Anmerkung: Derzeit unterstützt Freifunk Hamburg zwei unterschiedliche Router. Beide sind von TP-Link. Der oben abgebildete ist das kleinere Model und hat eine Antenne. Der andere hat ein wenig mehr Leistung und zwei Antennen. Die Einrichtung ist für beide gleich. Es ist also egal welchen du hast._
+_Anmerkung: Derzeit unterstützt Freifunk Hamburg zwei unterschiedliche Router, den TL-WR741ND und den TL-WR842ND. Beide sind von TP-Link. Der oben abgebildete ist das kleinere Model und hat eine Antenne. Der andere hat ein wenig mehr Leistung und zwei Antennen. Die Einrichtung ist für beide gleich. Es ist also egal welchen du hast. Falls Du ein anderes Routermodel in den Händen hälst, wie z.B. den TL-WR841ND, kann es sein, dass Du das Kabel in die blaue Buchse stecken musst, um eine Verbindung zu bekommen._
 
 ### 2. Konfiguration starten
 Jetzt kannst du den Router einfach über den Browser konfigurieren. 
