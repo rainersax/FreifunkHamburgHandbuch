@@ -39,6 +39,8 @@ Jetzt kannst du den Router einfach über den Browser konfigurieren.
 
 Dazu rufst du in deinen Browser folgende Adresse auf: __<http://192.168.0.1>__
 
+Bevor du weitermachst, musst du dich erst anmelden. Die wenig inspirierte Username / Passwort Kombination ist: __admin__ / __admin__
+
 Dein Browserfenster müsste nun so aussehen – Folge hier dem Link "System Tools".
 
 ![TP-Link Konfiguration](./img/TP_link_start.png "Geh zu System Tools")
