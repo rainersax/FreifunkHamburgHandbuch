@@ -8,7 +8,7 @@ Die Anleitung besteht aus zwei Teilen
 gerenderte Dokumente: [.pdf](freifunkhamburg-firmware/preview/freifunkhamburg-firmware-preview.pdf), [.mobi](freifunkhamburg-firmware/preview/freifunkhamburg-firmware-preview.mobi), und [.epub](freifunkhamburg-firmware/preview/freifunkhamburg-firmware-preview.epub)
 
 ### 2. Einrichten des Routers
-**[Markdown Source](^freifunkhamburg-reinrichten/manuscript/HowTo-Router-Einrichten.md)** 
+**[Markdown Source](freifunkhamburg-reinrichten/manuscript/HowTo-Router-Einrichten.md)** 
 
 gerenderte Dokumente: [.pdf](freifunkhamburg-reinrichten/preview/freifunkhamburg-reinrichten-preview.pdf), [.mobi](freifunkhamburg-reinrichten/preview/freifunkhamburg-reinrichten-preview.mobi), und [.epub](freifunkhamburg-reinrichten/preview/freifunkhamburg-reinrichten-preview.epub)
 
