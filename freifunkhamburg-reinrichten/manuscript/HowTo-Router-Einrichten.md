@@ -36,23 +36,19 @@ Bitte achte darauf, dass keine Leerzeichen im Namen erlaubt sind. Wenn du ein Le
 Dieser Name wird später noch einmal benötigt. Am besten öffnest du jetzt einen Texteditor und kopierst ihn dort hinein.
 
 #### Firmware automatisch aktualisieren
-Diese Option ist vorausgewählt. Wenn du die Auswahl stehen lässt, wird sich dein Router automatisch immer das aktuellste Freifunk-Betriebssystem installieren. Das spart eine Menge Zeit für die Zukunft und sorgt für Sicherheit. Warum sollte man es abstellen wollen? 
+Diese Option ist vorausgewählt. Wenn du die Auswahl stehen lässt, wird sich dein Router automatisch immer das aktuellste Freifunk-Betriebssystem installieren. Das spart eine Menge Zeit für die Zukunft und sorgt für Sicherheit. 
 
 #### Mesh-VPN
 Auch diese Option ist vorausgewählt - und das aus gutem Grund: Du erlaubst deinem Freifunk-Router über deinen Internetanschluss  eine verschlüsselte Verbindung zum Freifunk-Server herzustellen. Wenn du diese Option deaktivierst, kann der Router nur mit den Routern kommunizieren, die er direkt oder indirekt per WLAN oder über andere Router mit aktivierter Option erreicht. Der Zugang zum Internet ist dann nur möglich, wenn mindestens bei einem der erreichbaren Router die Option aktiviert ist. 
 Auch hier: Wir empfehlen den Haken gesetzt zu lassen.
 
-#### Mesh-VPN Bandbreite begrenzen
+#### Mesh-VPN Bandbreite begrenzen (optional)
 Wenn du einen normalen Internet-Anschluss hast, brauchst du die Begrenzung nicht zu aktivieren. Dein Router wird im alltäglichen Betrieb nicht allzuviel von deiner Bandbreite in Anspruch nehmen. Unsere Empfehlung ist deshalb, die Begrenzung nicht zu aktivieren.
-Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Mesh-VPN Bandbreite begrenzen?". Daraufhin erscheinen zwei neue Felder. Trage in die beiden Felder darunter die gewünschten Limits ein. Die Minimalwerte sind 1000 im oberen und 100 im unteren Feld.
+Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Mesh-VPN Bandbreite begrenzen?". Daraufhin erscheinen zwei neue Felder. Trage in die beiden Felder darunter die gewünschten Grenzen in Kbit/s ein. Die minimal sinnvollen Werte sind 1000 Downstream und 100 Upstream.
 
 ![](images/mesh_limit.png "wenn's sein muss")
 
 Wenn du alle Daten eingegeben und noch mal geprüft hast bist du fertig und klickst beherzt auf: "Fertig".
-
-_Anmerkung: Für erweiterte Einstellungen gibt es auch noch den Expertmode (rechts oben). Höchstwahrscheinlich musst du dir diese Einstellungen nicht einmal ansehen._
-
-![](images/speichern.png "nicht vergessen!")
 
 
 #### (Fast) Geschafft!
@@ -74,7 +70,7 @@ Alternativ kannst du deinen Router auch nur zum Meshing verwenden. Dazu muss all
 ### 4. Router im Netz registrieren
 Nun musst du nur noch deinen Router über folgendes Formular im Freifunk-Netz anmelden:
 
-**<http://freifunk-gw01.hamburg.ccc.de:8080/>**
+**<http://formular.hamburg.freifunk.net/>**
 
 #### Einrichtung Starten
 
@@ -106,10 +102,10 @@ Schreib also:
 ![](images/router_rueckseite_MAC.png "Die MAC-Adresse auf der Rückseite")
 
 **4. Kontakt – Nickname / Name**
-Unter diesem Kontakt wird dich Freifunk nur selten ansprechen. Z.B. wenn ein wichtiges Update des Freifunk-Betriebssystems für deinen Router verfügbar ist.
+Unter diesem Kontakt wird dich Freifunk nur sehr selten ansprechen. 
 
 **5. Kontakt – E-Mail Adresse**
-Wie unter 4 gesagt, wird dich Freifunk unter dieser E-Mail nur selten ansprechen. Kein Spam – versprochen.
+Wie unter 4 gesagt, wird dich Freifunk unter dieser E-Mail nur selten ansprechen. Nichtsdestotrotz ist es wichtig, dass hier eine email-Adresse steht unter der du tatsächlich auf absehbare Zeit erreichbar bist. Sie wird nur genutzt, wenn wir dich über etwas wichtiges informieren müssen. Kein Spam – versprochen.
 
 **6. Koordinaten des Knotens**
 Wenn du die Geo-Koordinaten des Standorts deines Routers hier einträgst, ist er auf der Karte der Zugangspunkte zu sehen. So können alle feststellen, wo überall Freifunk verfügbar ist. Diese Angabe ist freiwillig, aber empfohlen.
@@ -135,9 +131,9 @@ Wenn das Formular fertig ausgefüllt ist, schicke es mit einem Klick auf „Knot
 
 Damit ist die Registrierung abgeschlossen und du kannst deinen Freifunk-Router nun in Betrieb nehmen.
 
-**Wichtig: Notiere dir unbedingt das _Bearbeitungs-Token_.** _Damit kannst du später die Daten deines Routers anpassen. z.B. wenn dir der Name nicht mehr gefällt, oder du den Router wo anders aufstellst und neue Koordinaten des Knotens eingeben willst. Du fragst dich wie das geht? Klicke einfach bei <http://freifunk-gw01.hamburg.ccc.de:8080/> auf "> Knotendaten ändern" und ändere dann die Daten deines Knotens_
+**Wichtig: Notiere dir unbedingt das _Bearbeitungs-Token_.** _Damit kannst du später die Daten deines Routers anpassen. z.B. wenn dir der Name nicht mehr gefällt, oder du den Router wo anders aufstellst und neue Koordinaten des Knotens eingeben willst. Du fragst dich wie das geht? Klicke einfach bei <http://formular.hamburg.freifunk.net/> auf "> Knotendaten ändern" und ändere dann die Daten deines Knotens_
 
-Nach wenigen Minuten sollte der Router auf der Karte an der von dir angegebenen Position zu sehen sein. Wenn ein grüner Punkt angezeigt wird, ist alles in Ordnung und dein Router ist am Netz. Wenn zusätzlich noch eine Verbindungslinie zu einem anderen Knoten zu sehen ist, dann mesht dein Router mit einem anderen.  
+Nach wenigen Minuten sollte der Router auf der Karte an der von dir angegebenen Position zu sehen sein. Wenn ein grüner oder blauer Punkt angezeigt wird, ist alles in Ordnung und dein Router ist am Netz. Wenn zusätzlich noch eine Verbindungslinie zu einem anderen Knoten zu sehen ist, dann mesht dein Router mit einem anderen.  
 
 ![](images/karte_fertig.png "Dein Router ist nun auf der Karte zu sehen")
 
