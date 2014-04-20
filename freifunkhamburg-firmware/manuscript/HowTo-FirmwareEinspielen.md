@@ -29,7 +29,7 @@ Die Freifunk Firmware für die **[Versionen 4.x](http://freifunk-gw01.hamburg.cc
 
 Die Freifunk Firmware für die **[Versionen 1.x](http://freifunk-gw01.hamburg.ccc.de/ffhh/openwrt-ar71xx-generic-tl-wr842n-v1-squashfs-factory.bin)**
 
-Wenn du einen anderen Router verwendest, oder wenn du eine ältere Version der genannten Router hast, kannst du unter [hier](http://hamburg.freifunk.net/kurzanleitung) die entsprechende Version der Firmware laden.
+Wenn du einen anderen Router verwendest, oder wenn du eine ältere Version der genannten Router hast, kannst du unter [hier](http://hamburg.freifunk.net/anleitung#firmware) die entsprechende Version der Firmware laden.
 
 ## 3. Firmware einspielen
 Jetzt kannst du den Router einfach über den Browser konfigurieren. 
@@ -66,7 +66,7 @@ Das ist gut so. Denn nun läuft nicht mehr die alte Firmware sondern die neue, t
 
 ![](images/TP_link_firmware_reboot_finished.png "Die alte Firmware ist weg - die neue läuft")
 
-Als nächstes musst du deinen Router noch einrichten und im Freifunk Netz anmelden. Auch das ist ganz einfach. Eine Anleitung findest du unter [Anleitung Router einrichten](https://hamburg.freifunk.net/kurzanleitung/).
+Als nächstes musst du deinen Router noch einrichten und im Freifunk Netz anmelden. Auch das ist ganz einfach. Eine Anleitung findest du unter [Anleitung Router einrichten](http://hamburg.freifunk.net/anleitung/router-einrichten).
 
 ## Fragen?
 Solltest Du Fragen oder Probleme haben oder Einträge deines Knoten ändern wollen, schreibe gerne an 
