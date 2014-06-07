@@ -72,66 +72,51 @@ Nun musst du nur noch deinen Router über folgendes Formular im Freifunk-Netz an
 
 **<http://formular.hamburg.freifunk.net/>**
 
-#### Einrichtung Starten
+#### Einrichtung starten
+![](images/knotenformular-start.png "Startseite")
 
-![](images/einrichten_01.png "Bitte ausfüllen") 
+Auf dieser Seite hast du zwei Optionen: einen neuen Router anmelden oder die Daten eines bestehenden ändern. Klicke hier einfach auf "Melde einen neuen Knoten an".
 
-Auf dieser Seite hast du zwei Optionen: einen neuen Router anmelden oder die Daten eines bestehende ändern. Klicke hier einfach auf "+Knoten neu anmelden"
-
-_Anmerkung: Dein Router wird ab hier immer "Knoten" genannt. Das ändert für dich nichts. Aber es suggeriert auf halbwegs subtile Weise, dass er bald im Netz ist. :-)_
-
-
-#### Freifunk-Router anmelden
 Jetzt kannst du deinen Router über ein einfaches Formular anmelden. Was die einzelnen Felder bedeuten und wie sie auszufüllen sind, wird im Folgenden erklärt.
 
-![](images/knoten_comment.png "Bitte ausfüllen") 
+#### Knotendaten
+![](images/knotenformular-daten.png "Knotendaten")
 
-**1. Name**
-Gib hier den Namen an, den du vorhin während der Einrichtung in Schritt 4 vergeben hast. Unter diesem Namen ist dein Router bei Freifunk zu sehen.
+**Knotenname**
+Gib hier den Namen an, den du vorhin während der Einrichtung in Schritt 2 vergeben hast. Unter diesem Namen ist dein Router bei Freifunk zu sehen.
 
-**2. VPN-Schlüssel**
+**VPN-Schlüssel**
 Trage hier den VPN-Schlüssel ein (die lange, unverständliche Zeichenkette, remember?).
 
-**3. MAC-Adresse angeben**
+**MAC-Adresse**
 Als nächstes brauchst du die MAC-Adresse von der Unterseite des Routers. Die MAC-Adresse ist eine eindeutige Identifikationsnummer die der Hersteller für jedes Gerät vergibt.
 
 Wenn du sie in das Formular eingibst, füge bitte nach jedem zweiten Buchstaben einen Doppelpunkt hinzu. Leider schreibt der Hersteller die MAC-Adresse ohne Doppelpunkte.
 Schreib also:
-0A:F3:45:… anstatt 0AF345…
+A0:F3:45:… anstatt A0F345…
 
 ![](images/router_rueckseite_MAC.png "Die MAC-Adresse auf der Rückseite")
 
-**4. Kontakt – Nickname / Name**
-Unter diesem Kontakt wird dich Freifunk nur sehr selten ansprechen. 
+#### Geo-Koordinaten
+![](images/knotenformular-geo-humanistlab.png "Geo-Koordinaten")
 
-**5. Kontakt – E-Mail Adresse**
-Wie unter 4 gesagt, wird dich Freifunk unter dieser E-Mail nur selten ansprechen. Nichtsdestotrotz ist es wichtig, dass hier eine email-Adresse steht unter der du tatsächlich auf absehbare Zeit erreichbar bist. Sie wird nur genutzt, wenn wir dich über etwas wichtiges informieren müssen. Kein Spam – versprochen.
+Wenn du die Geo-Koordinaten deines Routers hier einträgst, ist er auf der Karte der Zugangspunkte zu sehen. So können alle feststellen, wo überall Freifunk verfügbar ist. Diese Angabe ist freiwillig, aber empfohlen.
 
-**6. Koordinaten des Knotens**
-Wenn du die Geo-Koordinaten des Standorts deines Routers hier einträgst, ist er auf der Karte der Zugangspunkte zu sehen. So können alle feststellen, wo überall Freifunk verfügbar ist. Diese Angabe ist freiwillig, aber empfohlen.
+Die Koordinaten zu ermitteln, ist ganz einfach: zoome zu dem Ort, an dem du den Router aufstellen möchtest. Klicke dann auf der Karte den Standort des Routers an. Die Koordinaten werden daraufhin in das Formular eingetragen.
 
-Die Geo-Koordinaten des Standorts zu ermitteln, ist ganz einfach:
-Geh auf die [Karte der Freifunk-Zugangspunkte](http://knotenkarte.de).
-Dein Browserfenster sollte dann ungefähr so aussehen:
+#### Kontaktdaten
+![](images/knotenformular-kontakt.png "Kontaktdaten")
 
-![](images/karte1.png "Finde deinen Standort auf der Karte")
+Bitte hinterlege hier einen Namen und eine gültige E-Mail-Adresse, unter der Freifunk dich bezüglich deines Routers kontaktieren kann. Keine Angst, dies geschieht nur sehr selten.
 
-Zoome nun zu dem Ort, an dem du den Router aufstellen willst. Klicke dann auf den Button „Koordinaten beim nächsten Klick zeigen“ (1) und nachfolgend auf den gewählten Ort (2).
+#### Formular abschicken
+Wenn das Formular fertig ausgefüllt ist, schicke es mit einem Klick auf "Knoten anmelden" ab. Wenn alles geklappt hat, müsste dein Browserfenster aussehen wie auf dem folgenden Bild.
 
-![](images/karte2_getcoordinates.png "Ermittele die Koordinaten des Router-Standorts")
-
-In dem daraufhin erscheinenden kleinen Fenster werden nun dessen Geo-Koordinaten angezeigt. Kopiere sie in das Formularfeld.
-
-![](images/karte2_confirm.png "Kopiere die Koordinaten")
-
-#### Formular Abschicken
-Wenn das Formular fertig ausgefüllt ist, schicke es mit einem Klick auf „Knoten eintragen“ ab. Wenn Alles geklappt hat müsste dein Browserfenster ähnlich aussehen, wie im folgenden Bild. 
-
-![](images/einrichten_fertig.png "Nun ist dein Router angemeldet")
+![](images/knotenformular-token.png "Bearbeitungs-Token")
 
 Damit ist die Registrierung abgeschlossen und du kannst deinen Freifunk-Router nun in Betrieb nehmen.
 
-**Wichtig: Notiere dir unbedingt das _Bearbeitungs-Token_.** _Damit kannst du später die Daten deines Routers anpassen. z.B. wenn dir der Name nicht mehr gefällt, oder du den Router wo anders aufstellst und neue Koordinaten des Knotens eingeben willst. Du fragst dich wie das geht? Klicke einfach bei <http://formular.hamburg.freifunk.net/> auf "> Knotendaten ändern" und ändere dann die Daten deines Knotens_
+**Wichtig: Notiere dir unbedingt das _Bearbeitungs-Token_.** _Damit kannst du später die Daten deines Routers anpassen, z.B. wenn dir der Name nicht mehr gefällt, oder du den Router woanders aufstellst und neue Koordinaten eingeben möchtest. Du fragst dich wie das geht? Klicke einfach bei <http://formular.hamburg.freifunk.net/> auf "Ändere die Daten Deines Knotens" und gib dein Bearbeitungs-Token an._
 
 Nach wenigen Minuten sollte der Router auf der Karte an der von dir angegebenen Position zu sehen sein. Wenn ein grüner oder blauer Punkt angezeigt wird, ist alles in Ordnung und dein Router ist am Netz. Wenn zusätzlich noch eine Verbindungslinie zu einem anderen Knoten zu sehen ist, dann mesht dein Router mit einem anderen.  
 
