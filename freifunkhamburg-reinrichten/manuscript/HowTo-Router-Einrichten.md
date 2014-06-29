@@ -1,8 +1,8 @@
 ## Einleitung
-Für die Einrichtung des Routers werden keine technischen Kenntnisse benötigt. Wenn du dieser Anleitung Schritt für Schritt folgst, kann eigentlich nichts schiefgehen. Wenn du fertig bist, läuft das Freifunk WLAN und ist für alle in der Nähe als offenes WLAN mit der SSID "hamburg.freifunk.net" zu sehen.
+Für die Einrichtung des Routers werden keine technischen Kenntnisse benötigt. Wenn du dieser Anleitung Schritt für Schritt folgst, kann eigentlich nichts schiefgehen. Wenn du fertig bist, läuft das Freifunk WLAN und ist für alle in der Nähe als offenes WLAN mit dem Namen "hamburg.freifunk.net" zu sehen.
 
-Dein Router sollte das Freifunk Betriebssystem bereits installiert haben. Ob das so ist, erfährst du von dem Freifunker, von dem du das Gerät bekommen hast.
-Wenn dein Router noch nicht das Freifunk-Betriebssystem installiert hat, findest du [hier](https://hamburg.freifunk.net/kurzanleitung/) eine Schritt-für-Schritt-Anleitung.
+Dein Router sollte das Freifunk-Betriebssystem (die "Firmware") bereits installiert haben.
+Falls dein Router noch keine Freifunk-Firmware installiert hat, findest du [hier](https://hamburg.freifunk.net/anleitung) eine Schritt-für-Schritt-Anleitung und die Termine der Freifunk-Treffen.
 
 ## Router einrichten
 
@@ -13,10 +13,9 @@ _Deinem Router (1) liegen mindestens eine Antenne (2), ein Steckernetzteil (3) u
 
 Bitte schraube zuerst die Antenne(n) auf die Gewindestecker des Routers. Schließe danach den Router mit dem Steckernetzteil an eine Steckdose an. Verbinde dann den Router mit dem beiliegenden LAN-Kabel (4) mit Deinem Computer. Stecke es dabei am Router in eine gelbe Buchse.
 
-![](images/gelbe_buchse.png "Steck deinen Router für die Einrichtung hier ein")
+![](images/gelbe_buchse.png "Verbinde eine gelbe Buchse mit deinem Computer")
 
 _Anmerkung: Bei manchen Routern kann es sein, dass du die blaue Buchse verwenden musst. Probier's einfach aus, wenn es mit gelb nicht klappt._
-
 
 ### 2. Router konfigurieren
 Jetzt kannst du den Router einfach über den Browser konfigurieren. 
@@ -25,82 +24,78 @@ Dazu rufst du in deinem Browser folgende Adresse auf:
 
 **<http://192.168.1.1>**
 
-Dein Browserfenster müsste nun aussehen. Hier kannst du die wichtigsten Einstellungen für deinen Router vornehmen.
+Dein Browserfenster müsste nun wie folgt aussehen. Hier kannst du die wichtigsten Einstellungen für deinen Router vornehmen.
 
-![](images/start.png "So geht's los")
+![](images/configmode-start.png "Konfigurationsseite der Freifunk-Firmware")
 
-#### Name
-Als erstes musst du deinem Router einen Namen geben. Nimm einfach einen, der dir gefällt und der vielleicht ein wenig über den Standort des Routers aussagt. z.B. HumanistLab.
-Bitte achte darauf, dass keine Leerzeichen im Namen erlaubt sind. Wenn du ein Leerzeichen brauchst, verwende einfach einen Unterstrich "_".
+#### Name dieses Knotens
+Als erstes solltest du deinem Router einen Namen geben. Nimm einfach einen, der dir gefällt und vielleicht etwas über den Standort des Routers aussagt. (Im Beispiel verwenden wir "Lisas-Freifunk".)
+Bitte achte darauf, dass keine Leerzeichen im Namen enthalten sind. Verwende stattdessen einfach einen Bindestrich ("-") oder Unterstrich ("_").
 
-Dieser Name wird später noch einmal benötigt. Am besten öffnest du jetzt einen Texteditor und kopierst ihn dort hinein.
+Dieser Name wird später noch einmal benötigt. Am besten öffnest du einen Texteditor und kopierst ihn dort hinein.
 
-#### Firmware automatisch aktualisieren
-Diese Option ist vorausgewählt. Wenn du die Auswahl stehen lässt, wird sich dein Router automatisch immer das aktuellste Freifunk-Betriebssystem installieren. Das spart eine Menge Zeit für die Zukunft und sorgt für Sicherheit. 
+#### Mesh-VPN aktivieren (empfohlen)
+Wenn du bei "Mesh-VPN aktivieren" ein Häkchen setzt, wird über deinen Internet-Anschluss eine verschlüsselte Verbindung zu den Freifunk-Servern hergestellt. Diese verbinden deinen Router dann mit weit entfernten Freifunk-Routern und dem Internet, ohne Störerhaftung.
 
-#### Mesh-VPN
-Auch diese Option ist vorausgewählt - und das aus gutem Grund: Du erlaubst deinem Freifunk-Router über deinen Internetanschluss  eine verschlüsselte Verbindung zum Freifunk-Server herzustellen. Wenn du diese Option deaktivierst, kann der Router nur mit den Routern kommunizieren, die er direkt oder indirekt per WLAN oder über andere Router mit aktivierter Option erreicht. Der Zugang zum Internet ist dann nur möglich, wenn mindestens bei einem der erreichbaren Router die Option aktiviert ist. 
-Auch hier: Wir empfehlen den Haken gesetzt zu lassen.
+Wenn die Option deaktiviert bleibt, kann sich dein Router nur mit anderen Freifunk-Routern in der Nachbarschaft verbinden. Internet-Zugang ist dann nur möglich, wenn einer der anderen Router ihn anbietet.
+
+Wir empfehlen dieses Häkchen zu setzen.
 
 #### Mesh-VPN Bandbreite begrenzen (optional)
-Wenn du einen normalen Internet-Anschluss hast, brauchst du die Begrenzung nicht zu aktivieren. Dein Router wird im alltäglichen Betrieb nicht allzuviel von deiner Bandbreite in Anspruch nehmen. Unsere Empfehlung ist deshalb, die Begrenzung nicht zu aktivieren.
-Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Mesh-VPN Bandbreite begrenzen?". Daraufhin erscheinen zwei neue Felder. Trage in die beiden Felder darunter die gewünschten Grenzen in Kbit/s ein. Die minimal sinnvollen Werte sind 1000 Downstream und 100 Upstream.
+Wenn du einen normalen Internet-Anschluss hast, wird dein Freifunk-Router im alltäglichen Betrieb nicht allzuviel von deiner Bandbreite in Anspruch nehmen. Unsere Empfehlung ist deshalb, die Begrenzung nicht zu aktivieren.
+Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Mesh-VPN Bandbreite begrenzen". Daraufhin erscheinen zwei neue Felder. Trage in die beiden Felder darunter die gewünschten Grenzen in kbit/s ein. Die minimal sinnvollen Werte sind "1000" für Downstream und "100" für Upstream.
 
-![](images/mesh_limit.png "wenn's sein muss")
+![](images/configmode-vpnlimit.png "Bandbreitenbegrenzung (optional)")
 
-Wenn du alle Daten eingegeben und noch mal geprüft hast bist du fertig und klickst beherzt auf: "Fertig".
-
+Wenn du alle Daten eingegeben und noch mal geprüft hast, bist du fertig und klickst beherzt auf "Fertig".
 
 #### (Fast) Geschafft!
 Dein Freifunk-Router ist nun fertig eingerichtet - aber du bist noch nicht ganz fertig!
 
 Dein Browser müsste nun so aussehen:
 
-![](images/fertig.png "nicht vergessen!")
+![](images/configmode-vpnkey.png "Öffentlicher VPN-Schlüssel und Link zum Knotenformular")
 
-Wichtig: Unter dem Namen deines Freifunk-Routers wird eine lange, unverständliche Zeichenkette angezeigt. Das ist der sogenannte VPN-Schlüssel. Den benötigst du später zur Registrierung deines Routers im Freifunk-Netz. Kopier ihn am besten ebenfalls in den Texteditor.
+**Wichtig:** Unter dem Namen deines Freifunk-Routers wird eine längere Zeichenkette angezeigt. (Im Beispiel ist es "d0dd...".) Das ist der sogenannte VPN-Schlüssel deines Routers. Du benötigst ihn zur Registrierung deines Routers im Freifunk-Netz. Kopiere am besten auch den VPN-Schlüssel in den Texteditor.
+
+Schliesse diese Seite bitte noch nicht, denn der angezeigte Link zu <http://formular.hamburg.freifunk.net/> vereinfacht dir gleich das Ausfüllen des Knotenformulars.
+
+Zunächst solltest du jedoch den Router mit deinem Internet-Anschluss verbinden.
 
 ### 3. Router anschließen
-Nun kannst du den Router ans Internet anschließen. Dazu musst du das LAN-Kabel auf der Rückseite deines Routers umstecken: Bisher hattest du das Kabel in der gelben Buchse (Bei den meisten Modellen). Jetzt muss es in die blaue. Verbinde dann noch das andere Ende des Kabels mit deinem Internet-Router und dein neuer Freifunk-Router ist am Netz.
+Wenn du vorhin das Mesh-VPN aktiviert hast, kannst du den Router nun ans Internet anschließen. Dazu musst du (bei den meisten Modellen) das LAN-Kabel auf der Rückseite von der gelben in die blaue Buchse umstecken. Das andere Ende des Kabels gehört in deinen Internet-Router.
 
-![](images/blaue_buchse.png "Steck deinen Router hier für den laufenden Betrieb ein")
+![](images/blaue_buchse.png "Verbinde die blaue Buchse mit deinem Internet-Router")
 
-Alternativ kannst du deinen Router auch nur zum Meshing verwenden. Dazu muss allerdings mindestens ein anderer Freifunk-Router in WLAN-Reichweite sein. Wenn einer der Router in dem Mesh-Netzwerk eine Internet-Verbindung hat, wird diese mit deinem Router geteilt. Das ist auch gut, aber wir empfehlen trotzdem den Freifunk-Router an deinen Internet-Router anzuschließen, wenn dir das möglich ist. Nur so teilst du deine Bandbreite mit anderen.
+Ohne Internet-Anschluss kommuniziert dein Router nur mit anderen Freifunk-Routern in WLAN-Reichweite. Wenn einer der anderen Router eine Internet-Verbindung hat, wird diese mit deinem Router geteilt. Das ist auch gut, aber wir empfehlen trotzdem den Freifunk-Router an deinen Internet-Router anzuschließen, wenn dir das möglich ist. Nur so teilst du deine Bandbreite mit anderen.
 
 ### 4. Router im Netz registrieren
-Nun musst du nur noch deinen Router über folgendes Formular im Freifunk-Netz anmelden:
+Nun musst du nur noch deinen Router im Freifunk-Netz anmelden. Verwende dazu noch einmal deinen privaten Internet-Zugang.
+
+Falls du den Link von der Konfigurationsseite verwendest, wird automatisch das Knotenformular geöffnet und ausgefüllt.
+
+Andernfalls öffne einfach den folgenden Link und klicke auf "Melde einen neuen Knoten an". Verwende die Informationen, die du vorhin in den Texteditor kopiert hast.
 
 **<http://formular.hamburg.freifunk.net/>**
-
-#### Einrichtung starten
-![](images/knotenformular-start.png "Startseite")
-
-Auf dieser Seite hast du zwei Optionen: einen neuen Router anmelden oder die Daten eines bestehenden ändern. Klicke hier einfach auf "Melde einen neuen Knoten an".
-
-Jetzt kannst du deinen Router über ein einfaches Formular anmelden. Was die einzelnen Felder bedeuten und wie sie auszufüllen sind, wird im Folgenden erklärt.
 
 #### Knotendaten
 ![](images/knotenformular-daten.png "Knotendaten")
 
 **Knotenname**
-Gib hier den Namen an, den du vorhin während der Einrichtung in Schritt 2 vergeben hast. Unter diesem Namen ist dein Router bei Freifunk zu sehen.
+Der Name, den du vorhin in Schritt 2 vergeben hast. Unter diesem Namen ist dein Router bei Freifunk [zu sehen](https://hamburg.freifunk.net/wo-wird-gefunkt).
 
 **VPN-Schlüssel**
-Trage hier den VPN-Schlüssel ein (die lange, unverständliche Zeichenkette, remember?).
+Die längere Zeichenkette, die vorhin auf der Konfigurationsseite zu sehen war.
 
 **MAC-Adresse**
-Als nächstes brauchst du die MAC-Adresse von der Unterseite des Routers. Die MAC-Adresse ist eine eindeutige Identifikationsnummer die der Hersteller für jedes Gerät vergibt.
+Die MAC-Adresse deines Routers findest du auf der Unterseite:
 
-Wenn du sie in das Formular eingibst, füge bitte nach jedem zweiten Buchstaben einen Doppelpunkt hinzu. Leider schreibt der Hersteller die MAC-Adresse ohne Doppelpunkte.
-Schreib also:
-A0:F3:45:… anstatt A0F345…
-
-![](images/router_rueckseite_MAC.png "Die MAC-Adresse auf der Rückseite")
+![](images/router_rueckseite_MAC.png "Die MAC-Adresse auf der Unterseite")
 
 #### Geo-Koordinaten
 ![](images/knotenformular-geo-humanistlab.png "Geo-Koordinaten")
 
-Wenn du die Geo-Koordinaten deines Routers hier einträgst, ist er auf der Karte der Zugangspunkte zu sehen. So können alle feststellen, wo überall Freifunk verfügbar ist. Diese Angabe ist freiwillig, aber empfohlen.
+Wenn du die Geo-Koordinaten deines Routers hier einträgst, ist er auf der Knotenkarte zu sehen. So können alle feststellen, wo überall Freifunk verfügbar ist. Diese Angabe ist freiwillig, aber empfohlen.
 
 Die Koordinaten zu ermitteln, ist ganz einfach: zoome zu dem Ort, an dem du den Router aufstellen möchtest. Klicke dann auf der Karte den Standort des Routers an. Die Koordinaten werden daraufhin in das Formular eingetragen.
 
@@ -122,12 +117,12 @@ Nach wenigen Minuten sollte der Router auf der Karte an der von dir angegebenen 
 
 ![](images/karte_fertig.png "Dein Router ist nun auf der Karte zu sehen")
 
-Jetzt hast du's geschafft. Klopf dir auf die Schultern, freu dich und verbreite die Botschaft von Freifunk weiter. 
+Jetzt hast du's geschafft. Klopf dir auf die Schultern, freu dich und verbreite die Botschaft von Freifunk weiter!
 
 ## Fragen?
-Solltest du Fragen oder Probleme haben oder Einträge deines Knoten ändern wollen, schreibe gerne an 
+Solltest du Fragen oder Probleme haben oder Einträge deines Knoten ändern wollen, schreibe gerne an:
 
-**<kontakt@hamburg.freifunk.net>**!
+**<kontakt@hamburg.freifunk.net>**
 
 ## Noch ein wichtiger Hinweis zum Schluss 
 Das Freifunk-Netz wird in die Niederlande getunnelt. Das kann bedeuten, dass dich Facebook, Googlemail, etc. warnen, du seist im Ausland. Erschrick nicht, obwohl in machen Warnungen von „Hackerangriffen“ etc. die Rede ist. Das ist ganz normal und es soll auch so sein. Diese Maßnahme dient dem Schutz vor der Störerhaftung.
