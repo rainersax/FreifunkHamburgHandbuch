@@ -39,7 +39,8 @@ Wir empfehlen dieses Häkchen zu setzen.
 
 #### Mesh-VPN Bandbreite begrenzen (optional)
 Wenn du einen normalen Internet-Anschluss hast, wird dein Freifunk-Router im alltäglichen Betrieb nicht allzuviel von deiner Bandbreite in Anspruch nehmen. Unsere Empfehlung ist deshalb, die Begrenzung nicht zu aktivieren.
-Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Mesh-VPN Bandbreite begrenzen". Daraufhin erscheinen zwei neue Felder. Trage in die beiden Felder darunter die gewünschten Grenzen in kbit/s ein. Die minimal sinnvollen Werte sind "1000" für Downstream und "100" für Upstream.
+
+Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Mesh-VPN Bandbreite begrenzen". Daraufhin erscheinen zwei neue Felder. Trage in die beiden Felder die gewünschten Grenzen in kbit/s ein. Wir empfehlen mindestens "8000" für Downstream und "500" für Upstream.
 
 ![](images/configmode-vpnlimit.png "Bandbreitenbegrenzung (optional)")
 
@@ -95,7 +96,7 @@ Damit ist die Registrierung abgeschlossen und du kannst deinen Freifunk-Router n
 **Wichtig: Notiere dir unbedingt das _Bearbeitungs-Token_.** _Damit kannst du später die Daten deines Routers anpassen, z.B. wenn dir der Name nicht mehr gefällt, oder du den Router woanders aufstellst und neue Koordinaten eingeben möchtest. Du fragst dich wie das geht? Klicke einfach bei <http://formular.hamburg.freifunk.net/> auf "Ändere die Daten Deines Knotens" und gib dein Bearbeitungs-Token an._
 
 ### 4. Router anschließen
-Wenn du vorhin das Mesh-VPN aktiviert hast, kannst du den Router nun ans Internet anschließen. Dazu musst du (bei den meisten Modellen) das LAN-Kabel auf der Rückseite von der gelben in die blaue Buchse umstecken. Das andere Ende des Kabels gehört in deinen Internet-Router.
+Wenn du vorhin das Mesh-VPN aktiviert hast, kannst du den Router nun ans Internet anschließen. Dazu musst du das LAN-Kabel auf der Rückseite in die blaue Buchse umstecken. Das andere Ende des Kabels gehört in deinen Internet-Router.
 
 ![](images/blaue_buchse.png "Verbinde die blaue Buchse mit deinem Internet-Router")
 
