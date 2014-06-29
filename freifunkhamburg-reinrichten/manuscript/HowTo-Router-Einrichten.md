@@ -15,8 +15,6 @@ Bitte schraube zuerst die Antenne(n) auf die Gewindestecker des Routers. Schlie�
 
 ![](images/gelbe_buchse.png "Verbinde eine gelbe Buchse mit deinem Computer")
 
-_Anmerkung: Bei manchen Routern kann es sein, dass du die blaue Buchse verwenden musst. Probier's einfach aus, wenn es mit gelb nicht klappt._
-
 ### 2. Router konfigurieren
 Jetzt kannst du den Router einfach über den Browser konfigurieren. 
 
@@ -31,8 +29,6 @@ Dein Browserfenster müsste nun wie folgt aussehen. Hier kannst du die wichtigst
 #### Name dieses Knotens
 Als erstes solltest du deinem Router einen Namen geben. Nimm einfach einen, der dir gefällt und vielleicht etwas über den Standort des Routers aussagt. (Im Beispiel verwenden wir "Lisas-Freifunk".)
 Bitte achte darauf, dass keine Leerzeichen im Namen enthalten sind. Verwende stattdessen einfach einen Bindestrich ("-") oder Unterstrich ("_").
-
-Dieser Name wird später noch einmal benötigt. Am besten öffnest du einen Texteditor und kopierst ihn dort hinein.
 
 #### Mesh-VPN aktivieren (empfohlen)
 Wenn du bei "Mesh-VPN aktivieren" ein Häkchen setzt, wird über deinen Internet-Anschluss eine verschlüsselte Verbindung zu den Freifunk-Servern hergestellt. Diese verbinden deinen Router dann mit weit entfernten Freifunk-Routern und dem Internet, ohne Störerhaftung.
@@ -56,27 +52,12 @@ Dein Browser müsste nun so aussehen:
 
 ![](images/configmode-vpnkey.png "Öffentlicher VPN-Schlüssel und Link zum Knotenformular")
 
-**Wichtig:** Unter dem Namen deines Freifunk-Routers wird eine längere Zeichenkette angezeigt. (Im Beispiel ist es "d0dd...".) Das ist der sogenannte VPN-Schlüssel deines Routers. Du benötigst ihn zur Registrierung deines Routers im Freifunk-Netz. Kopiere am besten auch den VPN-Schlüssel in den Texteditor.
+Unter dem Namen deines Freifunk-Routers wird eine längere Zeichenkette angezeigt. (Im Beispiel ist es "d0dd...".) Das ist der sogenannte VPN-Schlüssel deines Routers. 
 
-Schliesse diese Seite bitte noch nicht, denn der angezeigte Link zu <http://formular.hamburg.freifunk.net/> vereinfacht dir gleich das Ausfüllen des Knotenformulars.
+**Wichtig:** Schliesse diese Seite bitte noch nicht, denn über den angezeigten Link musst du deinen Freifunk-Router noch im Netz registrieren.
 
-Zunächst solltest du jedoch den Router mit deinem Internet-Anschluss verbinden.
-
-### 3. Router anschließen
-Wenn du vorhin das Mesh-VPN aktiviert hast, kannst du den Router nun ans Internet anschließen. Dazu musst du (bei den meisten Modellen) das LAN-Kabel auf der Rückseite von der gelben in die blaue Buchse umstecken. Das andere Ende des Kabels gehört in deinen Internet-Router.
-
-![](images/blaue_buchse.png "Verbinde die blaue Buchse mit deinem Internet-Router")
-
-Ohne Internet-Anschluss kommuniziert dein Router nur mit anderen Freifunk-Routern in WLAN-Reichweite. Wenn einer der anderen Router eine Internet-Verbindung hat, wird diese mit deinem Router geteilt. Das ist auch gut, aber wir empfehlen trotzdem den Freifunk-Router an deinen Internet-Router anzuschließen, wenn dir das möglich ist. Nur so teilst du deine Bandbreite mit anderen.
-
-### 4. Router im Netz registrieren
-Nun musst du nur noch deinen Router im Freifunk-Netz anmelden. Verwende dazu noch einmal deinen privaten Internet-Zugang.
-
-Falls du den Link von der Konfigurationsseite verwendest, wird automatisch das Knotenformular geöffnet und ausgefüllt.
-
-Andernfalls öffne einfach den folgenden Link und klicke auf "Melde einen neuen Knoten an". Verwende die Informationen, die du vorhin in den Texteditor kopiert hast.
-
-**<http://formular.hamburg.freifunk.net/>**
+### 3. Router im Netz registrieren
+Klicke jetzt den angezeigten Link. Dann wird automatisch das Knotenformular geöffnet und ausgefüllt.
 
 #### Knotendaten
 ![](images/knotenformular-daten.png "Knotendaten")
@@ -113,7 +94,14 @@ Damit ist die Registrierung abgeschlossen und du kannst deinen Freifunk-Router n
 
 **Wichtig: Notiere dir unbedingt das _Bearbeitungs-Token_.** _Damit kannst du später die Daten deines Routers anpassen, z.B. wenn dir der Name nicht mehr gefällt, oder du den Router woanders aufstellst und neue Koordinaten eingeben möchtest. Du fragst dich wie das geht? Klicke einfach bei <http://formular.hamburg.freifunk.net/> auf "Ändere die Daten Deines Knotens" und gib dein Bearbeitungs-Token an._
 
-Nach wenigen Minuten sollte der Router auf der Karte an der von dir angegebenen Position zu sehen sein. Wenn ein grüner oder blauer Punkt angezeigt wird, ist alles in Ordnung und dein Router ist am Netz. Wenn zusätzlich noch eine Verbindungslinie zu einem anderen Knoten zu sehen ist, dann mesht dein Router mit einem anderen.  
+### 4. Router anschließen
+Wenn du vorhin das Mesh-VPN aktiviert hast, kannst du den Router nun ans Internet anschließen. Dazu musst du (bei den meisten Modellen) das LAN-Kabel auf der Rückseite von der gelben in die blaue Buchse umstecken. Das andere Ende des Kabels gehört in deinen Internet-Router.
+
+![](images/blaue_buchse.png "Verbinde die blaue Buchse mit deinem Internet-Router")
+
+Ohne Internet-Anschluss kommuniziert dein Router nur mit anderen Freifunk-Routern in WLAN-Reichweite. Wenn einer der anderen Router eine Internet-Verbindung hat, wird diese mit deinem Router geteilt. Das ist auch gut, aber wir empfehlen trotzdem den Freifunk-Router an deinen Internet-Router anzuschließen, wenn dir das möglich ist. Nur so teilst du deine Bandbreite mit anderen.
+
+Nach wenigen Minuten sollte der Router auf der Knotenkarte <http://knotenkarte.de> an der von dir angegebenen Position zu sehen sein. Wenn ein grüner oder blauer Punkt angezeigt wird, ist alles in Ordnung und dein Router ist am Netz. Wenn zusätzlich noch eine Verbindungslinie zu einem anderen Knoten zu sehen ist, dann mesht dein Router mit einem anderen.  
 
 ![](images/karte_fertig.png "Dein Router ist nun auf der Karte zu sehen")
 
