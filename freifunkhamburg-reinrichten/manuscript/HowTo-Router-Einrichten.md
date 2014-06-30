@@ -2,7 +2,7 @@
 Für die Einrichtung des Routers werden keine technischen Kenntnisse benötigt. Wenn du dieser Anleitung Schritt für Schritt folgst, kann eigentlich nichts schiefgehen. Wenn du fertig bist, läuft das Freifunk WLAN und ist für alle in der Nähe als offenes WLAN mit dem Namen "hamburg.freifunk.net" zu sehen.
 
 Dein Router sollte das Freifunk-Betriebssystem (die "Firmware") bereits installiert haben.
-Falls dein Router noch keine Freifunk-Firmware installiert hat, findest du [hier](https://hamburg.freifunk.net/anleitung) eine Schritt-für-Schritt-Anleitung und die Termine der Freifunk-Treffen.
+Falls dein Router noch keine Freifunk-Firmware installiert hat, findest du [hier](http://hamburg.freifunk.net/anleitung/firmware-einspielen) eine Schritt-für-Schritt-Anleitung. Alternativ helfen wir Dir natürlich auch gerne auf einem Freifunk-Treffen.
 
 ## Router einrichten
 
@@ -64,7 +64,7 @@ Klicke jetzt den angezeigten Link. Dann wird automatisch das Knotenformular geö
 ![](images/knotenformular-daten.png "Knotendaten")
 
 **Knotenname**
-Der Name, den du vorhin in Schritt 2 vergeben hast. Unter diesem Namen ist dein Router bei Freifunk [zu sehen](https://hamburg.freifunk.net/wo-wird-gefunkt).
+Der Name, den du vorhin in Schritt 2 vergeben hast. Unter diesem Namen wird dein Router bei Freifunk [zu sehen](https://hamburg.freifunk.net/wo-wird-gefunkt) sein.
 
 **VPN-Schlüssel**
 Die längere Zeichenkette, die vorhin auf der Konfigurationsseite zu sehen war.
@@ -77,7 +77,7 @@ Die MAC-Adresse deines Routers findest du auf der Unterseite:
 #### Geo-Koordinaten
 ![](images/knotenformular-geo-humanistlab.png "Geo-Koordinaten")
 
-Wenn du die Geo-Koordinaten deines Routers hier einträgst, ist er auf der Knotenkarte zu sehen. So können alle feststellen, wo überall Freifunk verfügbar ist. Diese Angabe ist freiwillig, aber empfohlen.
+Wenn du die Geo-Koordinaten deines Routers hier einträgst, ist er auf der [Knotenkarte](http://knotenkarte.de) zu sehen. So können alle feststellen, wo überall Freifunk verfügbar ist. Diese Angabe ist freiwillig, aber empfohlen.
 
 Die Koordinaten zu ermitteln, ist ganz einfach: zoome zu dem Ort, an dem du den Router aufstellen möchtest. Klicke dann auf der Karte den Standort des Routers an. Die Koordinaten werden daraufhin in das Formular eingetragen.
 
