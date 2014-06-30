@@ -14,22 +14,12 @@ Stecke dafür das Kabel in eine der gelben Buchsen (die blaue brauchst du späte
 ![](images/gelbe_buchse.png "Steck deinen Router für die Einrichtung hier ein")
 
 ## 2. Firmware runterladen
-Derzeit gibt es die Hamburg Freifunk als fertigen Download für zwei verschiedene Router-Typen. 
+Wir unterstützen eine ganze Reihe verschiedener Router von verschiedenen Hersteller. [Auf der Seite](http://hamburg.freifunk.net/anleitung#firmware) findest du eine Liste der Geräte, für die es fertige Firmware gibt.
 
 Herauszufinden welche Firmware du brauchst ist ganz einfach:
 Der Router-Typ (1) und die Hardware-Version (2) steht auf der Rückseite des Routers.
 
 ![](images/TP_link_version.png "Hardware-Version")
-
-### TP-Link TL-WR741ND (der Router mit nur einer Antenne):
-
-Die Freifunk Firmware für die **[Versionen 4.x](http://freifunk-gw01.hamburg.ccc.de/ffhh/openwrt-ar71xx-generic-tl-wr741nd-v4-squashfs-factory.bin)**
-
-### TP-Link TL-WR842ND (der Router mit zwei Antennen)
-
-Die Freifunk Firmware für die **[Versionen 1.x](http://freifunk-gw01.hamburg.ccc.de/ffhh/openwrt-ar71xx-generic-tl-wr842n-v1-squashfs-factory.bin)**
-
-Wenn du einen anderen Router verwendest, oder wenn du eine ältere Version der genannten Router hast, kannst du unter [hier](http://hamburg.freifunk.net/anleitung#firmware) die entsprechende Version der Firmware laden.
 
 ## 3. Firmware einspielen
 Jetzt kannst du den Router einfach über den Browser konfigurieren. 
