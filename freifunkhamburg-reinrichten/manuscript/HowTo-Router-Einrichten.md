@@ -20,7 +20,7 @@ Jetzt kannst du den Router einfach über den Browser konfigurieren.
 
 Dazu rufst du in deinem Browser folgende Adresse auf: 
 
-**<http://192.168.1.1>**
+**[http://192.168.1.1](http://192.168.1.1)**
 
 Dein Browserfenster müsste nun wie folgt aussehen. Hier kannst du die wichtigsten Einstellungen für deinen Router vornehmen.
 
@@ -42,7 +42,7 @@ Wenn du einen normalen Internet-Anschluss hast, wird dein Freifunk-Router im all
 
 Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Mesh-VPN Bandbreite begrenzen". Daraufhin erscheinen zwei neue Felder. Trage in die beiden Felder die gewünschten Grenzen in kbit/s ein. Wir empfehlen mindestens "8000" für Downstream und "500" für Upstream.
 
-![](images/configmode-vpnlimit.png "Bandbreitenbegrenzung (optional)")
+![](images/configmode-vpnlimit.png "Optional: Bandbreitenbegrenzung")
 
 Wenn du alle Daten eingegeben und noch mal geprüft hast, bist du fertig und klickst beherzt auf "Fertig".
 
@@ -93,7 +93,7 @@ Wenn das Formular fertig ausgefüllt ist, schicke es mit einem Klick auf "Knoten
 
 Damit ist die Registrierung abgeschlossen und du kannst deinen Freifunk-Router nun in Betrieb nehmen.
 
-**Wichtig: Notiere dir unbedingt das _Bearbeitungs-Token_.** _Damit kannst du später die Daten deines Routers anpassen, z.B. wenn dir der Name nicht mehr gefällt, oder du den Router woanders aufstellst und neue Koordinaten eingeben möchtest. Du fragst dich wie das geht? Klicke einfach bei <http://formular.hamburg.freifunk.net/> auf "Ändere die Daten Deines Knotens" und gib dein Bearbeitungs-Token an._
+**Wichtig: Notiere dir unbedingt das _Bearbeitungs-Token_.** _Damit kannst du später die Daten deines Routers anpassen, z.B. wenn dir der Name nicht mehr gefällt, oder du den Router woanders aufstellst und neue Koordinaten eingeben möchtest. Du fragst dich wie das geht? Klicke einfach am [Knotenformular](http://formular.hamburg.freifunk.net/) auf "Ändere die Daten Deines Knotens" und gib dein Bearbeitungs-Token an._
 
 ### 4. Router anschließen
 Wenn du vorhin das Mesh-VPN aktiviert hast, kannst du den Router nun ans Internet anschließen. Dazu musst du das LAN-Kabel auf der Rückseite in die blaue Buchse umstecken. Das andere Ende des Kabels gehört in deinen Internet-Router.
@@ -102,7 +102,7 @@ Wenn du vorhin das Mesh-VPN aktiviert hast, kannst du den Router nun ans Interne
 
 Ohne Internet-Anschluss kommuniziert dein Router nur mit anderen Freifunk-Routern in WLAN-Reichweite. Wenn einer der anderen Router eine Internet-Verbindung hat, wird diese mit deinem Router geteilt. Das ist auch gut, aber wir empfehlen trotzdem den Freifunk-Router an deinen Internet-Router anzuschließen, wenn dir das möglich ist. Nur so teilst du deine Bandbreite mit anderen.
 
-Nach wenigen Minuten sollte der Router auf der Knotenkarte <http://knotenkarte.de> an der von dir angegebenen Position zu sehen sein. Wenn ein grüner oder blauer Punkt angezeigt wird, ist alles in Ordnung und dein Router ist am Netz. Wenn zusätzlich noch eine Verbindungslinie zu einem anderen Knoten zu sehen ist, dann mesht dein Router mit einem anderen.  
+Nach wenigen Minuten sollte der Router auf der [Knotenkarte](http://knotenkarte.de/) an der von dir angegebenen Position zu sehen sein. Wenn ein grüner oder blauer Punkt angezeigt wird, ist alles in Ordnung und dein Router ist am Netz. Wenn zusätzlich noch eine Verbindungslinie zu einem anderen Knoten zu sehen ist, dann mesht dein Router mit einem anderen.
 
 ![](images/karte_fertig.png "Dein Router ist nun auf der Karte zu sehen")
 
@@ -111,7 +111,7 @@ Jetzt hast du's geschafft. Klopf dir auf die Schultern, freu dich und verbreite 
 ## Fragen?
 Solltest du Fragen oder Probleme haben oder Einträge deines Knoten ändern wollen, schreibe gerne an:
 
-**<kontakt@hamburg.freifunk.net>**
+**[kontakt@hamburg.freifunk.net](mailto:kontakt@hamburg.freifunk.net)**
 
 ## Noch ein wichtiger Hinweis zum Schluss 
 Das Freifunk-Netz wird in die Niederlande getunnelt. Das kann bedeuten, dass dich Facebook, Googlemail, etc. warnen, du seist im Ausland. Erschrick nicht, obwohl in machen Warnungen von „Hackerangriffen“ etc. die Rede ist. Das ist ganz normal und es soll auch so sein. Diese Maßnahme dient dem Schutz vor der Störerhaftung.
